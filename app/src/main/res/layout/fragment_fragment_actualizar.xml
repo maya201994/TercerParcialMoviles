@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentActualizar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoText="false"
+            android:editable="false"
+            android:text="ACTUALIZAR ESTACION" />
+
+        <EditText
+            android:id="@+id/editText_nombreestacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="NOMBRE ESTACION"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/bttn_BuscarEstacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="BUSCAR ESTACION" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:autoText="false"
+            android:editable="false"
+            android:text="DATOS ESTACION" />
+
+        <EditText
+            android:id="@+id/textView_Descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRIPCION"/>
+
+        <EditText
+            android:id="@+id/textView_Latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LATITUD"/>
+
+        <EditText
+            android:id="@+id/textView_longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LONGITUD"/>
+
+        <EditText
+            android:id="@+id/textView_Rangomin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RANGO MINIMO"/>
+
+        <EditText
+            android:id="@+id/textView_Rangomax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RANGO MAXIMO"/>
+
+        <Button
+            android:id="@+id/bttn_ActualizarEstacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="ACTUALIZAR ESTACION" />
+
+    </LinearLayout>
+</FrameLayout>

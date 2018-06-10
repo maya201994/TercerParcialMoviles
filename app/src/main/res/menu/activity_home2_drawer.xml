@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/Res_Estacion"
+            android:title="Registrar Estación" />
+        <item
+            android:id="@+id/Bus_Estacion"
+            android:title="Buscar Estación" />
+        <item
+            android:id="@+id/Act_Estacion"
+            android:title="Actualizar Estación" />
+        <item
+            android:id="@+id/Eli_Estacion"
+            android:title="Eliminar Estación" />
+    </group>
+
+    <item android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="Cerrar Sesion" />
+        </menu>
+    </item>
+</menu>

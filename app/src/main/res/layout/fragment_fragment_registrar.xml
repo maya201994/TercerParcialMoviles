@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentRegistrar">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoText="false"
+            android:editable="false"
+            android:text="REGISTRAR ESTACION" />
+
+        <EditText
+            android:id="@+id/editText_nombreestacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="NOMBRE ESTACION"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editText_latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LATITUD"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText_longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LONGITUD"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText_Ran_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RANGO MINIMO"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText_Ran_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RANGO MAXIMO"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText_descripcionestacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRIPCION ESTACION"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_RegistrarEstacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="REGISTRAR ESTACION" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/photoImageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Id"/>
+
+        <Button
+            android:id="@+id/buttonLog_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Logout"
+            android:text="LOGOUT"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <Button
+            android:id="@+id/buttonRevoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REVOKE"
+            android:onClick="Revoke"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
