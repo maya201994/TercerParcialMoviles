@@ -57,6 +57,7 @@ public class FragmentRegistrar extends Fragment implements Response.Listener<JSO
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
     EditText campoNombre, campoDescripcion, campoRangomin, campoRangomax, campoLatitud, campoLongitud;
     Button registrarestacion;
     ProgressDialog progressDialog;

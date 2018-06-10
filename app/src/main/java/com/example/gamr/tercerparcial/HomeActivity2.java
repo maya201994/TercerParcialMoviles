@@ -62,6 +62,7 @@ public class HomeActivity2 extends AppCompatActivity implements NavigationView.O
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.Desarrolladores) {
+
             return true;
         }
 
