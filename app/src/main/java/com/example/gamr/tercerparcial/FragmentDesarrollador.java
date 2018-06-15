@@ -28,7 +28,7 @@ public class FragmentDesarrollador extends Fragment {
     private String mParam1;
     private String mParam2;
     View vista;
-    ImageView fotomarcela;
+    ImageView fotomarcela,fotogustavo;
 
     private OnFragmentInteractionListener mListener;
 
@@ -67,7 +67,9 @@ public class FragmentDesarrollador extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         vista = inflater.inflate(R.layout.fragment_fragment_desarrollador, container, false);
-        fotomarcela = (ImageView) vista.findViewById(R.id.imagenMarcela);
+        fotomarcela = (ImageView) vista.findViewById(R.id.marcela);
+        fotogustavo = (ImageView) vista.findViewById(R.id.gustavo);
+
 
         return vista;
     }
