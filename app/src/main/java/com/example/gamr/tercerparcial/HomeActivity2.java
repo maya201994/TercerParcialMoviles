@@ -16,7 +16,8 @@ import com.google.android.gms.common.ConnectionResult;
 
 public class HomeActivity2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
         FragmentRegistrar.OnFragmentInteractionListener, LogoutFragment.OnFragmentInteractionListener,
-        FragmentConsultar.OnFragmentInteractionListener, FragmentActualizar.OnFragmentInteractionListener  {
+        FragmentConsultar.OnFragmentInteractionListener, FragmentActualizar.OnFragmentInteractionListener,
+        GoogleMapExample.OnFragmentInteractionListener{
 
 
     @Override
@@ -92,6 +93,9 @@ public class HomeActivity2 extends AppCompatActivity implements NavigationView.O
         } else if (id == R.id.logout) {
             fragment = new LogoutFragment();
             fragmentSeleccionado=true;
+        } else if (id == R.id.map) {
+            fragment = new GoogleMapExample();
+            fragmentSeleccionado = true;
         }
 
         if(fragmentSeleccionado == true){
