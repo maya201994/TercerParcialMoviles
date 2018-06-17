@@ -16,8 +16,7 @@ import com.google.android.gms.common.ConnectionResult;
 
 public class HomeActivity2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
         FragmentRegistrar.OnFragmentInteractionListener, LogoutFragment.OnFragmentInteractionListener,
-        FragmentConsultar.OnFragmentInteractionListener, FragmentActualizar.OnFragmentInteractionListener,
-        GoogleMapExample.OnFragmentInteractionListener{
+        FragmentConsultar.OnFragmentInteractionListener, FragmentActualizar.OnFragmentInteractionListener{
 
 
     @Override

@@ -27,6 +27,8 @@ import com.android.volley.toolbox.Volley;
 import com.example.gamr.tercerparcial.BaseDatos.ConstantesBD;
 import com.example.gamr.tercerparcial.Conexion.SQLiteHelper;
 import com.example.gamr.tercerparcial.Entidades.VolleySingleton;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -63,6 +65,7 @@ public class FragmentRegistrar extends Fragment implements Response.Listener<JSO
     ProgressDialog progressDialog;
     JsonObjectRequest jsonObjectRequest;
     View vista;
+    private AdView mAdView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -109,6 +112,9 @@ public class FragmentRegistrar extends Fragment implements Response.Listener<JSO
         campoRangomax = (EditText) vista.findViewById(R.id.editText_Ran_max);
         campoLatitud = (EditText) vista.findViewById(R.id.editText_latitud);
         campoLongitud = (EditText) vista.findViewById(R.id.editText_longitud);
+        mAdView = vista.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         registrarestacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -22,7 +22,6 @@
             android:id="@+id/editText_nombreestacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:hint="NOMBRE ESTACION"
             android:inputType="text" />
 
@@ -30,24 +29,15 @@
             android:id="@+id/bttn_BuscarEstacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:background="@color/colorPrimary"
             android:text="BUSCAR ESTACION" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:autoText="false"
-            android:editable="false"
-            android:text="DATOS ESTACION" />
 
         <EditText
             android:id="@+id/textView_Descripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DESCRIPCION"/>
+            android:layout_marginTop="10dp"
+            android:hint="DESCRIPCION" />
 
         <EditText
             android:id="@+id/textView_Latitud"
@@ -77,9 +67,18 @@
             android:id="@+id/bttn_ActualizarEstacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:background="@color/colorPrimary"
             android:text="ACTUALIZAR ESTACION" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
 
     </LinearLayout>
 </FrameLayout>

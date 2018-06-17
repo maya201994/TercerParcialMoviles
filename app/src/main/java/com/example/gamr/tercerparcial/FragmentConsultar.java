@@ -21,6 +21,8 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.gamr.tercerparcial.Entidades.Estacion;
 import com.example.gamr.tercerparcial.Entidades.VolleySingleton;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,6 +49,7 @@ public class FragmentConsultar extends Fragment implements Response.Listener<JSO
     ProgressDialog progressDialog;
     JsonObjectRequest jsonObjectRequest;
     View vista;
+    private AdView mAdView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -92,6 +95,9 @@ public class FragmentConsultar extends Fragment implements Response.Listener<JSO
         campoLongitud = (TextView) vista.findViewById(R.id.textView_longitud);
         campoRangomax = (TextView) vista.findViewById(R.id.textView_Rangomax);
         campoRangomin = (TextView) vista.findViewById(R.id.textView_Rangomin);
+        mAdView = vista.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         consultarestacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

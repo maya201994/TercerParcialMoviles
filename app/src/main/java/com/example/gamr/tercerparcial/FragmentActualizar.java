@@ -24,6 +24,8 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.gamr.tercerparcial.Entidades.Estacion;
 import com.example.gamr.tercerparcial.Entidades.VolleySingleton;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -54,6 +56,8 @@ public class FragmentActualizar extends Fragment {
     StringRequest stringRequest;
     JsonObjectRequest jsonObjectRequest;
     View vista;
+
+    private AdView mAdView;
 
     private OnFragmentInteractionListener mListener;
 
@@ -98,6 +102,9 @@ public class FragmentActualizar extends Fragment {
         campoLongitud = (EditText) vista.findViewById(R.id.textView_longitud);
         campoRangomax = (EditText) vista.findViewById(R.id.textView_Rangomax);
         campoRangomin = (EditText) vista.findViewById(R.id.textView_Rangomin);
+        mAdView = vista.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         consultarestacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
